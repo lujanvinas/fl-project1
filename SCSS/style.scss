@@ -38,8 +38,7 @@
     }
 
 
-    a:hover,
-    .hovered {
+    a:hover{
         color: $accent;
     }
 
@@ -51,7 +50,6 @@
     padding: 0 30px;
     margin: 0 auto;
     overflow: auto;
-    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content:center;
@@ -84,17 +82,35 @@
         border: 1px solid $lightest-color;
         margin-bottom: 8px;
         text-transform: capitalize;
-    }
+        background-color: $darkest-color;
 
-    a:hover {
-        background-color: $lightest-color;
-        color: $darkest-color;
-        
+        &:hover {
+            background-color: $lightest-color;
+            color: $darkest-color;
+            
+        }
     }
+}
 
-    .full {
-        width: 100%;
+
+.box {
+    background-color: $lightest-color;
+
+    p,
+    h3 {
+    color: $darkest-color;
+    
     }
 
 }
 
+.box-img {
+    width: 100%;
+    height: 350px;
+    background-color: #e8c2ca;
+}
+
+.highlight {
+    background-color: $accent;
+    width: 50%;
+}
