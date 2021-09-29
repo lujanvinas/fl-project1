@@ -13,48 +13,19 @@
     letter-spacing: 5px;
 }
 
-.showcase {
-    height: 100vh;
-    
-    nav {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        margin: 5px 10px;
 
-        li {
-            padding: 15px;
+.nav-link {
+    color: $light-color;
 
-            a {
-                color: $light-color;
-            }
+    &:hover{
+        color: $accent;
             
         }
-
-        .hovered{
-            color: $accent;
-        }
-
-    }
-
-
-    a:hover{
-        color: $accent;
-    }
-
 }
 
 
-.container {
-    max-width: 1300px;
-    padding: 0 30px;
-    margin: 0 auto;
-    overflow: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content:center;
-    
-}
+
+
 
 
 .title {
