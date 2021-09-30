@@ -1,0 +1,12 @@
+.showcase-btns > button {
+    background-color: $darkest-color;
+    border: 1px solid $lightest-color;
+    text-transform: capitalize;
+
+    &:hover {
+        color: $darkest-color;
+        background-color: $lightest-color;
+        
+    }
+
+}

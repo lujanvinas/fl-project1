@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="/CSS/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,42 +12,41 @@
     <title>DFINITY</title>
 </head>
 <body>
-    <header class="showcase bg-dark text-center vh-100">
+    <header class="showcase text-center vh-100">
         <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg bg-dark">
-            <div class="container">
-                <h5 class="navbar-brand logo">DFINITY</h5>
+        <nav class="navbar navbar-expand-lg bg-dark px-3">
+            <h5 class="navbar-brand logo">DFINITY</h5>
+            <!-- Hamburger -->
+            <button 
+            class="navbar-toggler navbar-dark" 
+            type="button" 
+            data-bs-toggle="collapse" 
+            data-bs-target="#navmenu"
+            >
+            <span class="navbar-toggler-icon"></span>
+            </button>
 
-                <button 
-                class="navbar-toggler navbar-dark" 
-                type="button" 
-                data-bs-toggle="collapse" 
-                data-bs-target="#navmenu"
-                >
-                <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navmenu">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">Explore</a>
-                        </li>
-                        <li class="nav-item"">
-                            <a href="#" class="nav-link">Learn</a>
-                        </li>
-                        <li class="nav-item"">
-                            <a href="#" class="nav-link">Ecosystem</a>
-                        </li>
-                        <li class="nav-item"">
-                            <a href="#" class="nav-link">Foundation</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link text-warning">Developer Center &rarr;</a>
-                        </li>
-                    </ul>
-                </div>
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Explore</a>
+                    </li>
+                    <li class="nav-item"">
+                        <a href="#" class="nav-link">Learn</a>
+                    </li>
+                    <li class="nav-item"">
+                        <a href="#" class="nav-link">Ecosystem</a>
+                    </li>
+                    <li class="nav-item"">
+                        <a href="#" class="nav-link">Foundation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-warning">Developer Center &rarr;</a>
+                    </li>
+                </ul>
             </div>
         </nav>
+        
         <div class="container d-flex flex-column justify-content-center h-100">
             <div class="showcase-content text-center">
                 <div class="title">
@@ -54,95 +54,305 @@
                     <h1 class="space">singularity</h1>
                 </div>
                     <h4>Lorem ipsum dolor sit amet consectetur.</h4>
-                <div class="btns-container container d-flex">
-                    <a href="#" >&rarr; How it works</a>
-                    <a href="#">&rarr; Ecosystem</a>
-                    <a href="#">&rarr; Roadmap</a>
-                    <a href="#" class="w-100">&rarr; Start coding</a>
+            
+                    <!-- showcase buttons -->
+                    <div class="container pt-4">
+                        <div class="showcase-btns row gap-3 text-center">
+                            <div class="col-md p-0">
+                                <button class="btn btn-outline-light w-100 m-0">&rarr; How it works</button>
+                            </div>
+                            <div class="col-md p-0">
+                                <button class="btn btn-outline-light w-100 m-0">&rarr; Ecosystem</button>
+                            </div>
+                            <div class="col-md p-0">
+                                <button class="btn btn-outline-light w-100 m-0">&rarr; Roadmap</button>
+                            </div>
+                        </div>
+                        <div class="showcase-btns row">
+                            <div class="col p-0 my-3">
+                                <button class="btn btn-outline-light w-100 m-0">&rarr; Start coding</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+                <p class="text-center text-muted"">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, suscipit.</p>
             </div>
-            <p class="text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
         </div>
     </header>
 
-    <section class="w-50 mx-auto text-center">
-        <h2>Lorem ipsum consectetur</h2>
-            <p class="p-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora exercitationem fuga et porro minima? Similique suscipit ipsum officiis voluptates! Aut.</p>
+    <section class="py-5 my-5 text-center">
+        <div class="container mx-auto">
+            <h2>Lorem ipsum consectetur</h2>
+            <p class="info h4 py-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo nesciunt consectetur velit consequatur aspernatur exercitationem a quis eius iste ut, adipisci ducimus possimus repellat, ipsa corporis harum atque quisquam earum fugiat </p>
+        </div>
     </section>
-    <section class="p-3">
+
+    <!-- cards -->
+    <section class="my-5 p-3">
+        <div class="row g-4">
+            <div class="col-md">
+                <div class="card rounded-3">
+                    <div class="card-body text-left">
+                        <h3 class="card-title mb-2 text-dark">Fleek</h3>
+                        <h6 class="card-subtitle mb-5 text-muted">Lorem ipsum dolor sit</h6>
+                        <img src="ASSETS/screen-coding.jpeg" class="card-img-top" style="min-width: 20rem;" alt="...">
+                        <p class="card-text text-dark mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati deserunt accusamus repellendus eos rerum! Error ipsam reiciendis eveniet modi odit!</p>
+                        <a href="#" class="btn btn-warning text-muted">1000+ websites</a>
+                        <p class="text-muted mt-3">fleek.co</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md">
+                <div class="card rounded-3">
+                    <div class="card-body text-left">
+                        <h3 class="card-title mb-2 text-dark">dscvr</h3>
+                        <h6 class="card-subtitle mb-5 text-muted">Lorem ipsum dolor sit</h6>
+                        <img src="ASSETS/neon.jpeg" class="card-img-top" style="min-width: 20rem;" alt="...">
+                        <p class="card-text text-dark mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati deserunt accusamus repellendus eos rerum! Error ipsam reiciendis eveniet modi odit!</p>
+                        <a href="#" class="btn btn-warning text-muted">1000+ websites</a>
+                        <p class="text-muted mt-3">dscvr.co</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md">
+                <div class="card rounded-3">
+                    <div class="card-body text-left">
+                        <h3 class="card-title mb-2 text-dark">Fleek</h3>
+                        <h6 class="card-subtitle mb-5 text-muted">Lorem ipsum dolor sit</h6>
+                        <img src="ASSETS/screen-coding.jpeg" class="card-img-top" style="min-width: 20rem;" alt="...">
+                        <p class="card-text text-dark mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati deserunt accusamus repellendus eos rerum! Error ipsam reiciendis eveniet modi odit!</p>
+                        <a href="#" class="btn btn-warning text-muted">1000+ websites</a>
+                        <p class="text-muted mt-3">fleek.co</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md">
+                <div class="card rounded-3">
+                    <div class="card-body text-left">
+                        <h3 class="card-title mb-2 text-dark">dscvr</h3>
+                        <h6 class="card-subtitle mb-5 text-muted">Lorem ipsum dolor sit</h6>
+                        <img src="ASSETS/neon.jpeg"card-img-top" style="min-width: 20rem;" alt="...">
+                        <p class="card-text text-dark mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati deserunt accusamus repellendus eos rerum! Error ipsam reiciendis eveniet modi odit!</p>
+                        <a href="#" class="btn btn-warning text-muted">1000+ websites</a>
+                        <p class="text-muted mt-3">dscvr.co</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="my-5 p-5 text-center">
+        <div class="mx-auto">
+            <h3 class="mt-5">sit amet consectetur adipisicing</h3>
+            <h3>Lorem ipsum dolor</h3>
+            <button class="btn btn-light w-50 mt-5">&rarr; See more</button>
+        </div>
+    </section>
+    
+    <!-- services -->
+    <section class="services p-5">  
         <div class="container">
             <div class="row">
-                <div class="col-md box-1 rounded-3">
-                    <div class="box-title p-3">
-                        <h3>Fleek</h3>
-                        <p>Lorem ipsum dolor sit.</p>
-                    </div>
-                    <div class="box-img"></div>
-                    <div class="box-p p-3">
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates officia sit at molestias ducimus doloribus, inventore culpa alias, corrupti aperiam iusto mollitia nobis nihil illo quaerat placeat ratione amet quidem.</p>
-                        <div class="highlight">
-                            <p>1000+ websites</p>
+                <div class="col-md-4">
+                    <div class="card mb-5" style="border:none">
+                        <div class="card-body text-center">
+                            <img src="ASSETS/neon.jpeg" card-img-top" style="max-width: 15rem;" alt="...">
+                            <div class="mt-5">
+                                <a href="#" class="h3">How It Works</a>
+                                <p class="text-muted mt-3 px-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum, quo?</p>
+                            </div>
                         </div>
-                        <p>fleek.co</p>
-                    </div>    
-                </div>
-                <div class="col-md box-1 rounded-3">
-                    <div class="box-title p-3">
-                        <h3>Fleek</h3>
-                        <p>Lorem ipsum dolor sit.</p>
                     </div>
-                    <div class="box-img"></div>
-                    <div class="box-p p-3">
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates officia sit at molestias ducimus doloribus, inventore culpa alias, corrupti aperiam iusto mollitia nobis nihil illo quaerat placeat ratione amet quidem.</p>
-                        <div class="highlight">
-                            <p>1000+ websites</p>
-                        </div>
-                        <p>fleek.co</p>
-                    </div>    
                 </div>
-                <div class="col-md box-1 rounded-3">
-                    <div class="box-title p-3">
-                        <h3>Fleek</h3>
-                        <p>Lorem ipsum dolor sit.</p>
+                <div class="col-md-4">
+                    <div class="card mb-5" style="border:none">
+                        <div class="card-body text-center">
+                            <img src="ASSETS/neon.jpeg" card-img-top" style="max-width: 15rem;" alt="...">
+                            <div class="mt-5">
+                                <a href="#" class="h3">Quick Start</a>
+                                <p class="text-muted mt-3 px-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum, quo?</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="box-img"></div>
-                    <div class="box-p p-3">
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates officia sit at molestias ducimus doloribus, inventore culpa alias, corrupti aperiam iusto mollitia nobis nihil illo quaerat placeat ratione amet quidem.</p>
-                        <div class="highlight">
-                            <p>1000+ websites</p>
-                        </div>
-                        <p>fleek.co</p>
-                    </div>    
                 </div>
-                <div class="col-md box-1 rounded-3">
-                    <div class="box-title p-3">
-                        <h3>Fleek</h3>
-                        <p>Lorem ipsum dolor sit.</p>
+                <div class="col-md-4">
+                    <div class="card mb-5 rounded-3" style="border:none">
+                        <div class="card-body text-center">
+                            <img src="ASSETS/neon.jpeg" card-img-top" style="max-width: 15rem;" alt="...">
+                            <div class="mt-5">
+                                <a href="#" class="h3">Developer Grants</a>
+                                <p class="text-muted mt-3 px-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum, quo?</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="box-img"></div>
-                    <div class="box-p p-3">
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates officia sit at molestias ducimus doloribus, inventore culpa alias, corrupti aperiam iusto mollitia nobis nihil illo quaerat placeat ratione amet quidem.</p>
-                        <div class="highlight">
-                            <p>1000+ websites</p>
-                        </div>
-                        <p>fleek.co</p>
-                    </div>    
                 </div>
-    
-
+                <div class="col-md-4">
+                    <div class="card mb-5" style="border:none">
+                        <div class="card-body text-center">
+                            <img src="ASSETS/neon.jpeg" card-img-top" style="max-width: 15rem;" alt="...">
+                            <div class="mt-5">
+                                <a href="#" class="h3">Developer Forum</a>
+                                <p class="text-muted mt-3 px-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum, quo?</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-5" style="border:none">
+                        <div class="card-body text-center">
+                            <img src="ASSETS/neon.jpeg" card-img-top" style="max-width: 15rem;" alt="...">
+                            <div class="mt-5">
+                                <a href="#" class="h3">Free Cycles</a>
+                                <p class="text-muted mt-3 px-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum, quo?</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-5" style="border:none">
+                        <div class="card-body text-center">
+                            <img src="ASSETS/neon.jpeg" card-img-top" style="max-width: 15rem;" alt="...">
+                            <div class="mt-5">
+                                <a href="#" class="h3">Github</a>
+                                <p class="text-muted mt-3 px-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum, quo?</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            
+        </div>       
+    </section>
+
+    <!-- gallery -->
+    <section class="gallery my-5 p-3">
+        <div class="text-center py-5">
+            <h3>200+ Team Members</h3>
         </div>
-
+        <div class="row g-4">
+            <div class="col-sm-2">
+                <div class="card">
+                    <img src="ASSETS/man.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body text-center">         
+                        <h5 class="card-title mb-2">John Doe</h5>
+                        <h6 class="card-subtitle mb-1 text-muted">Founder & CEO</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <div class="card">
+                    <img src="ASSETS/woman.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body text-center">         
+                        <h5 class="card-title mb-2">Sarah Williams</h5>
+                        <h6 class="card-subtitle mb-1 text-muted">Vice President</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <div class="card">
+                    <img src="ASSETS/man.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body text-center">         
+                        <h5 class="card-title mb-2">John Doe</h5>
+                        <h6 class="card-subtitle mb-1 text-muted">Founder & CEO</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <div class="card">
+                    <img src="ASSETS/woman.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body text-center">         
+                        <h5 class="card-title mb-2">Sarah Williams</h5>
+                        <h6 class="card-subtitle mb-1 text-muted">Vice President</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <div class="card">
+                    <img src="ASSETS/man.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body text-center">         
+                        <h5 class="card-title mb-2">John Doe</h5>
+                        <h6 class="card-subtitle mb-1 text-muted">Founder & CEO</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <div class="card">
+                    <img src="ASSETS/woman.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body text-center">         
+                        <h5 class="card-title mb-2">Sarah Williams</h5>
+                        <h6 class="card-subtitle mb-1 text-muted">Vice President</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <div class="card">
+                    <img src="ASSETS/man.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body text-center">         
+                        <h5 class="card-title mb-2">John Doe</h5>
+                        <h6 class="card-subtitle mb-1 text-muted">Founder & CEO</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <div class="card">
+                    <img src="ASSETS/woman.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body text-center">         
+                        <h5 class="card-title mb-2">Sarah Williams</h5>
+                        <h6 class="card-subtitle mb-1 text-muted">Vice President</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <div class="card">
+                    <img src="ASSETS/man.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body text-center">         
+                        <h5 class="card-title mb-2">John Doe</h5>
+                        <h6 class="card-subtitle mb-1 text-muted">Founder & CEO</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <div class="card">
+                    <img src="ASSETS/woman.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body text-center">         
+                        <h5 class="card-title mb-2">Sarah Williams</h5>
+                        <h6 class="card-subtitle mb-1 text-muted">Vice President</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <div class="card">
+                    <img src="ASSETS/man.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body text-center">         
+                        <h5 class="card-title mb-2">John Doe</h5>
+                        <h6 class="card-subtitle mb-1 text-muted">Founder & CEO</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <div class="card">
+                    <img src="ASSETS/woman.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body text-center">         
+                        <h5 class="card-title mb-2">Sarah Williams</h5>
+                        <h6 class="card-subtitle mb-1 text-muted">Vice President</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
-    <section class="section3">
 
+    <!-- info -->
+    <section class="info py-5 text-center">
+        <div class="my-5 container">
+            <p class="h4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo nesciunt consectetur velit consequatur aspernatur exercitationem a quis eius iste ut, adipisci ducimus possimus repellat, ipsa corporis harum atque quisquam earum fugiat distinctio tempore odio rerum officiis minima? Tenetur non sed sunt, totam, eaque incidunt perferendis accusamus ipsa quod, dolorem unde!</p>
+        </div>
     </section>
-    <section class="section1">
 
-    </section>
-    <section class="section1">
-
+    <section class="my-5 p-5 text-center">
+        <div class="mx-auto">
+            <h2 class="mt-5">sit amet consectetur adipisicing</h2>
+            <h2>Lorem ipsum dolor</h2>
+            <button class="btn btn-light w-50 mt-5">&rarr; Visit</button>
+        </div>
     </section>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
